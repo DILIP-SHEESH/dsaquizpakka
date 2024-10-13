@@ -72,6 +72,9 @@ form {
   width: 90%; /* Use percentage for responsive width */
   max-width: 600px; /* Ensure a max width for larger screens */
   margin: 0 auto; /* Center the form */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
 }
 
 label {
@@ -79,6 +82,13 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
   text-align: center; /* Center align labels */
+}
+
+.question {
+  width: 100%;
+  font-size: 18px; /* Increase font size for better readability */
+  margin-bottom: 15px;
+  text-align: center; /* Center align question text */
 }
 
 input[type="text"], 
@@ -202,5 +212,9 @@ p {
 
   .button-confirm {
       width: 100%; /* Full width button on small screens */
+  }
+
+  .question {
+      font-size: 16px; /* Adjust font size for smaller screens */
   }
 }
