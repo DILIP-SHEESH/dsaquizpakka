@@ -28,6 +28,8 @@ body {
   font-size: 14px;
   line-height: 20px;
   overflow: visible;
+  width: 100vw; /* Use full viewport width */
+  padding: 0 20px; /* Add horizontal padding for better alignment */
 }
 
 .section {
@@ -38,10 +40,11 @@ body {
   width: 90vw; /* Increased width */
   max-width: 900px; /* Set max width */
   height: auto; /* Set height to auto for flexibility */
-  max-height: auto; /* Set max height to auto for flexibility */
   padding: 20px; /* Increase padding for a better layout */
   display: flex;
   gap: 20px; /* Adjust gap for better spacing */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+  border-radius: 10px; /* Add rounded corners */
 }
 
 h1 {
@@ -52,14 +55,17 @@ h1 {
   font-size: 6rem; /* Adjust font size as needed */
   margin-bottom: 20px; /* Space below heading */
   letter-spacing: 2px;
+  text-align: center; /* Center the heading */
 }
 
 .form-container {
-  width: 70vw; /* Adjust width for responsiveness */
+  width: 100%; /* Full width of the parent */
+  max-width: 600px; /* Adjust max width as needed */
   background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the form container */
 }
 
 form {
@@ -138,10 +144,12 @@ input[type="radio"] {
   overflow-y: auto;
   margin-bottom: 20px;
   padding: 10px;
-  width: 70vw;
+  width: 100%; /* Full width of the parent */
+  max-width: 600px; /* Adjust max width as needed */
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the question container */
 }
 
 .question-box {
