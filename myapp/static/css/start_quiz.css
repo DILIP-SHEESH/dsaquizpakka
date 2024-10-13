@@ -1,3 +1,4 @@
+/* Font Faces */
 @font-face {
   font-family: NHD;
   src: url(./NeueHaasDisplayBold.ttf);
@@ -10,6 +11,8 @@
   font-family: inder;
   src: url(./Inder-Regular.ttf);
 }
+
+/* Body Styles */
 body {
   color: #333;
   background-image: url('./DSA1.jpg');
@@ -27,33 +30,33 @@ body {
   overflow: visible;
 }
 
+/* Navigation Bar */
 nav {
   height: 100px;
   width: 97.5%;
-  background-color: #2d4fe91d;
+  background-color: rgba(45, 79, 233, 0.1);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
   margin: 10px;
-  box-shadow: 0 8px 32px 0 rgba(252, 251, 251, 0.37);
+  box-shadow: 0 8px 32px rgba(252, 251, 251, 0.37);
   display: flex;
   align-items: center;
   position: relative;
   z-index: 2;
-  top: 0;
 }
 
 .logo {
   height: 100%;
   width: auto;
   object-fit: contain;
-  z-index: inherit;
 }
 
+/* Scrollbar */
 html::-webkit-scrollbar {
   display: none;
 }
 
+/* Heading Styles */
 h1 {
   margin-top: 20px;
   color: #838383;
@@ -64,19 +67,21 @@ h1 {
   text-align: center; /* Center the heading */
 }
 
+/* Form Styles */
 form {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 90%; /* Use percentage for responsive width */
-  max-width: 600px; /* Ensure a max width for larger screens */
+  width: 90%; /* Responsive width */
+  max-width: 600px; /* Max width for larger screens */
   margin: 0 auto; /* Center the form */
   display: flex;
   flex-direction: column; /* Stack children vertically */
   align-items: center; /* Center children horizontally */
 }
 
+/* Label Styles */
 label {
   display: block;
   margin-bottom: 5px;
@@ -84,13 +89,15 @@ label {
   text-align: center; /* Center align labels */
 }
 
+/* Question Text */
 .question {
   width: 100%;
-  font-size: 18px; /* Increase font size for better readability */
+  font-size: 18px; /* Better readability */
   margin-bottom: 15px;
   text-align: center; /* Center align question text */
 }
 
+/* Input Styles */
 input[type="text"], 
 input[type="email"] {
   width: 100%; /* Full width */
@@ -101,6 +108,7 @@ input[type="email"] {
   font-size: 16px;
 }
 
+/* Button Styles */
 button {
   background-color: #ad0b49;
   color: white;
@@ -117,15 +125,17 @@ button:hover {
   background-color: #a30c39;
 }
 
+/* Error Message */
 p {
   color: red;
   margin-top: 10px;
   text-align: center; /* Center align paragraph text */
 }
 
+/* Form Container */
 .form {
   padding: 20px;
-  background: #2d4fe91d;
+  background: rgba(45, 79, 233, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center; /* Center align items */
@@ -136,6 +146,7 @@ p {
   max-width: 600px; /* Responsive max width */
 }
 
+/* Title Styles */
 .title {
   color: var(--font-color);
   font-weight: 900;
@@ -144,6 +155,7 @@ p {
   text-align: center; /* Center align title text */
 }
 
+/* Input Field Custom Styles */
 .input {
   width: 100%;
   max-width: 250px; /* Ensure it shrinks properly */
@@ -159,6 +171,7 @@ p {
   outline: none;
 }
 
+/* Login Buttons */
 .login-with {
   display: flex;
   justify-content: center; /* Center align login buttons */
@@ -180,6 +193,7 @@ p {
   align-items: center;
 }
 
+/* Confirm Button */
 .button-confirm {
   margin: 50px auto 0 auto;
   width: 100%;
@@ -195,6 +209,7 @@ p {
   cursor: pointer;
 }
 
+/* Media Queries for Responsiveness */
 @media only screen and (max-width: 768px) {
   h1 {
       font-size: 4rem; /* Smaller font size for mobile */
@@ -202,7 +217,7 @@ p {
   }
 
   form {
-      width: 95%; /* Make the form take up more space on smaller screens */
+      width: 95%; /* Form takes up more space on smaller screens */
       margin: 0 auto; /* Center the form */
   }
 
